@@ -1,8 +1,11 @@
-import React,{useState} from 'react'
+
 import {Bar} from 'react-chartjs-2'
-import {Chart as ChartJS} from 'chart.js/auto'
+import {BarElement, Chart as ChartJS} from 'chart.js/auto'
 import'./Charts.css'
-import Dropdown from '../dropdown/Dropdown'
+
+ChartJS.register(
+  BarElement
+)
 
 const BarChart = ({lineChartData}) => {
 
@@ -20,6 +23,8 @@ const BarChart = ({lineChartData}) => {
       };
 
 
+     
+
   return (
     <div className='barchart'>
     <div className='charts_container'>
@@ -28,5 +33,6 @@ const BarChart = ({lineChartData}) => {
     </div>
   )
 }
+
 
 export default BarChart
