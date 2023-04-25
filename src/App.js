@@ -7,6 +7,7 @@ import LineChart from './componenets/Charts/LineChart';
 // import { UserData } from './componenets/Data';
 import Dropdown from './componenets/dropdown/Dropdown';
 import './App.css'
+//import Dataux from './componenets/Dataux';
 
 function App() {
 
@@ -27,21 +28,25 @@ function App() {
           {
             label:"Users Gained",
             data: data.map((item) => item.userGain),
-            backgroundColor: data.map(( item,i) => colors[i % colors.length]),
-            borderColor: colors,
-            borderWidth: 2,
+          // backgroundColor: data.map((item,i) => colors[i % colors.length]),
+            borderWidth: 1,
+            borderColor:"blue",
+           backgroundColor:"blue",
             pointBorderColor: "#ff6384", 
-      pointRadius: 5,
-      pointHoverRadius: 7,
-
+      pointRadius: 6,
+      pointHoverRadius: 7
           },
-          // {
-          //   label:"Users Lost",
-          //   data: data.map((item) => item.userLosts),
-          //   backgroundColor: data.map(( item,i) => colors[i % colors.length]),
-          //   borderColor: colors,
-          //   borderWidth: 1,
-          // }
+      //     {
+      //       label:"Users Lost",
+      //       data: data.map((item) => item.userLosts),
+      //       backgroundColor:"red",
+      //       //backgroundColor: data.map((item,i) => colors[i % colors.length]),
+      //       borderColor: "red",
+      //       pointBorderColor: "#ff6384", 
+      // pointRadius: 6,
+      // pointHoverRadius: 7,
+
+      //     }
         ],
       };
      
